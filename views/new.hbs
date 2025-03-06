@@ -10,7 +10,7 @@
           <div class="col-md-12 row mb-3 ml-1 mr-4">
             <label for="name" class="col-md-4 col-form-label">Name<span class="field-required">*</span> </label>
             <input type="text" name="name" class="form-control col-md-8" id="name" value="{{ record.name }}" required
-              maxlength="15">
+              maxlength="30s">
           </div>
           {{!-- Date --}}
           <div class="col-md-12 row mb-3 ml-1 mr-4">
@@ -31,9 +31,9 @@
             </select>
           </div>
           {{#if (eq type 'expense')}}
-          {{!-- Merchant --}}
+          {{!-- Payee --}}
           <div class="col-md-12 row mb-3 ml-1 mr-4">
-            <label for="merchant" class="col-md-4 col-form-label">Merchant</label>
+            <label for="merchant" class="col-md-4 col-form-label">Payee</label>
             <input type="text" name="merchant" class="form-control col-md-8" id="merchant"
               value="{{ record.merchant }}">
           </div>

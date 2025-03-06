@@ -4,13 +4,11 @@
 
 Expense Tracker is a simple RESTful web application built with Node.js, Express, and mongoDB for users to track daily expenses.
 
-This project is Live on: https://sleepy-cliffs-84117.herokuapp.com/
-
 You can use the default accounts below, register an account, or use your Facebook/Google account to login.
 
 ```
-email: user1@example.com/user2@example.com
-password: 12345678
+email: admin@gmail.com
+password: Admin@123
 ```
 
 ## Features
@@ -50,7 +48,7 @@ After login, users can:
 #### Clone the repository locally
 
 ```
-$ git clone https://github.com/ivyhungtw/expense-tracker.git
+$ git clone https://github.com/muditxdev/expense-tracker.git
 ```
 
 #### Install project dependencies
@@ -65,14 +63,14 @@ $ npm install
 To properly use the app and Facebook login feature, make sure you have filled out the following information in .env file.
 
 You can get your own Facebook id and secret on [Facebook Developers](https://developers.facebook.com/).
-
+1- 
 ```
 FACEBOOK_ID=<Your Facebook app ID>
 FACEBOOK_SECRET=<Your Facebook app secret>
-FACEBOOK_CALLBACK=http://localhost:3000/auth/facebook/callback
+FACEBOOK_CALLBACK=http://localhost:5000/auth/facebook/callback
 SESSION_SECRET=ThisIsMySecret
 MONGODB_URI=mongodb://localhost/todo-list
-PORT=3000
+PORT=5000
 ```
 
 ## Use Expense Tracker
@@ -99,4 +97,4 @@ or just run:
 $ node app.js
 ```
 
-The server will start running on http://localhost:3000/
+The server will start running on http://localhost:5000/

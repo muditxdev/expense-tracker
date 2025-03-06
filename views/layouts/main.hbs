@@ -38,11 +38,11 @@
             <a class="nav-link" href="/">Overview <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{#if (eq type 'expense')}}active{{/if}}" href="/records/expense">Expense</a>
+            <a class="nav-link {{#if (eq type 'expense')}}active{{/if}}" href="/records/expense">Add Expense</a>
           </li>
-          <li class="nav-item">
+          {{!-- <li class="nav-item">
             <a class="nav-link {{#if (eq type 'revenue')}}active{{/if}}" href="/records/revenue">Revenue</a>
-          </li>
+          </li> --}}
           {{!-- Dropdown avatar --}}
           <div class="dropdown m-3 d-flex justify-content-end">
             <a class=" dropdown-toggle" style="text-decoration: none;" href="#" role="button" id="dropdownMenuLink"
@@ -101,7 +101,7 @@
                 </div>
                 <div class="category-info col-10 row d-flex align-items-center">
                   <div class="col-12 col-sm-8 col-lg-8 col-xl-12" style="font-weight: 500;">{{ this.name }}</div>
-                  <div class="col-12 col-sm-4 col-lg-4 col-xl-12">${{ this.amount }}</div>
+                  <div class="col-12 col-sm-4 col-lg-4 col-xl-12">&#8377;{{ this.amount }}</div>
                 </div>
               </div>
               {{/if}}

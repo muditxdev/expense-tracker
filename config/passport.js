@@ -48,8 +48,10 @@ module.exports = app => {
         profileFields: ['id', 'email', 'displayName', 'picture.type(large)']
       },
       async (accessToken, refreshToken, profile, done) => {
-        const { email, name, id, picture } = profile._json
-
+        const { email, name, id } = profile._json
+        const {picture} = profile.files
+        console.log('picture', picture)
+        console.log('profile', profile)
         try {
           // User's facebookId or email must be unique
           let user = await User.findOne({
